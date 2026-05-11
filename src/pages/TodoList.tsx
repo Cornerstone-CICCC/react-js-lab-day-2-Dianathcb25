@@ -66,7 +66,7 @@ const TodoList = () => {
             {todo.map((todo) => (
               <li
                 key={todo.id}
-                className={`flex justify-between items-center p-3 ${isDark ? 'bg-[#7f766f]' : 'bg-[#47cfe7]'}`}
+                className={`flex justify-between items-center mb-2 p-3 ${isDark ? 'bg-[#7f766f]' : 'bg-[#47cfe7]'}`}
               >
                 {todo.task}
                 <button onClick={() => handleDelete(todo.id)}>
